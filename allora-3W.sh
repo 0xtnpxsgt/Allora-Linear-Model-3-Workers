@@ -43,10 +43,6 @@ install_and_configure() {
     sudo chmod +x /usr/local/bin/docker-compose
     docker-compose --version
 
-    echo -e "\e[1;34m===== Setting Docker Permissions =====\e[0m"
-    sudo groupadd docker || true
-    sudo usermod -aG docker $USER
-
     echo "docker" > ~/.docker_setup_stage
 
     echo -e "\e[31mPlease log out and log back in to apply Docker group changes.\e[0m"
