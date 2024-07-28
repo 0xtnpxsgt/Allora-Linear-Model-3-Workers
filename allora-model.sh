@@ -44,7 +44,7 @@ echo
 echo -e "${BOLD}${DARK_YELLOW}Creating Worker.${RESET}"
 execute_with_prompt 'mkdir workers'
 echo
-execute_with_prompt 'mkdir workers/worker-1 workers/worker-2'
+execute_with_prompt 'mkdir workers/worker-1 workers/worker-2 workers/worker-3'
 echo
 execute_with_prompt 'sudo chmod -R 777 workers/worker-1'
 echo
@@ -53,6 +53,8 @@ echo
 execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-1:/data alloranetwork/allora-inference-base:latest -c "mkdir -p /data/keys && (cd /data/keys && allora-keys)"'
 echo
 execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-2:/data alloranetwork/allora-inference-base:latest -c "mkdir -p /data/keys && (cd /data/keys && allora-keys)"'
+echo
+execute_with_prompt 'sudo docker run -it --entrypoint=bash -v ./workers/worker-3:/data alloranetwork/allora-inference-base:latest -c "mkdir -p /data/keys && (cd /data/keys && allora-keys)"'
 echo
 execute_with_prompt 'cd'
 echo
