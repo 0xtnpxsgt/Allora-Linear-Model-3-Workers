@@ -1,6 +1,9 @@
-# Allora Basic Price Prediction Node - 3 Workers
+# Allora With 3 Workers(Linear Model)
 
-Topic 1 - 2 - 7 ETH 
+TOPIC USED - ETH
+- Topic 2
+- Topic 2
+- Topic 3
 
 ## ONE CLICK GUIDE  - RUN THIS
 
