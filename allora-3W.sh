@@ -324,6 +324,9 @@ volumes:
   workers:
   head-data:
 EOL
+    echo -e "\e[1;34m===== Running Docker Compose =====\e[0m"
+    docker-compose build
+    docker-compose up -d
 
     echo -e "\e[1;32m======= Setup Complete! Proceed to the Next Step =======\e[0m"
     display_message
