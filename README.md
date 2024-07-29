@@ -146,7 +146,7 @@ curl --location 'http://localhost:6000/api/v1/functions/execute' --header 'Conte
 #### IMPORTANT: If you encounter any issues about inference or container, you can restart your Docker containers with the following commands:
 ```bash
 cd $HOME && cd basic-coin-prediction-node
-docker compose restar
+docker compose restart
 ```
 
 
