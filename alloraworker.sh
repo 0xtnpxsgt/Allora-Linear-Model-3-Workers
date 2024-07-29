@@ -281,13 +281,4 @@ echo -e "${BOLD}${UNDERLINE}${DARK_YELLOW}Building and starting Docker container
 docker-compose build
 docker-compose up -d
 echo
-sleep 2
-echo -e "${BOLD}${DARK_YELLOW}Checking running Docker containers...${RESET}"
-docker ps
-echo
-read -p "Enter basic-coin-prediction-node-worker CONTAINER_ID: " CONTAINER_ID
-echo
-execute_with_prompt 'docker logs -f $CONTAINER_ID'
-echo
-echo "${BOLD}${DARK_YELLOW}Follow me on Twitter @ZunXBT for more one click node run guides !!${RESET}"
-echo
+
