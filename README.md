@@ -34,7 +34,7 @@ chmod +x alloraworker3.sh
 ```
 Re-run the setup script after logging back in:  (if you have recently updated Docker permissions).
 ```bash
-./allora-3W.sh
+./alloraworker3.sh
 ```
 
 ## Step 3: Check Node Status
